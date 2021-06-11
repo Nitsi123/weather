@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e)
 
 async function getWeatherInfo(city){
     let value = city.value
-    url = "http://api.openweathermap.org/data/2.5/weather?q="+value+"&units=metric&appid=8235a17d6d4b4b4ea5ba07566b7ef6d7"
+    url = "api.openweathermap.org/data/2.5/weather?q="+value+"&units=metric&appid=8235a17d6d4b4b4ea5ba07566b7ef6d7"
 
     try{
         const response = await fetch(url, {mode: 'cors'})
