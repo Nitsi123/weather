@@ -1,0 +1,90 @@
+body{
+    background-image: url(/dist/images/back7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.weather-container{
+    font-size: 4rem;
+}
+
+form{
+    width: 80vw;
+    height: 40vh;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#city{
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.5rem;
+    background: transparent;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 0.8; /* Firefox */
+  }
+
+#search{
+    color: azure;
+    background-color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 10px;
+    transition: 50ms all;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#search:active{
+    transform: scale(1.25);
+}
+
+.weather{
+    width: 80vw;
+    height: 40vh;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    color: rgb(25, 28, 31);
+    font-size: 1rem;
+}
+
+
+.weather > div{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.name{
+    font-size: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.temp{
+    font-size: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    color: black;
+}
+
